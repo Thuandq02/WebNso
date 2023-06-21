@@ -38,13 +38,13 @@
                             <span>Tải Game</span>
                         </a>
                         <nav class="my-2 my-md-0 mr-md-3">
-                            <a class="btn btn-outline-success" href="/login">
+                            <a class="btn btn-outline-success" href="{{ route('show.setinfor') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                                 </svg>
-                                <span>Đăng nhập</span>
+                                <span>Đổi thông tin</span>
                             </a>
-                            <a class="btn btn-outline-danger" href="/reg">
+                            <a class="btn btn-outline-danger" href="{{ route('show.reg') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
                                 </svg>
@@ -65,17 +65,17 @@
                         </div>
                         <div class="modal-body">
                             <div class="list-group">
-                                <a href="/filegame/nsodl.jar" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho java</a>
+                                <a href="{{ asset('filegame/NSO_MEO.jar') }}" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho java</a>
                             </div>
                         </div>
                         <div class="modal-body">
                             <div class="list-group">
-                                <a href="/filegame/nsodeluc.apk" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho apk</a>
+                                <a href="{{ asset('filegame/NSO_MEO.apk') }}" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho apk</a>
                             </div>
                         </div>
                         <div class="modal-body">
                             <div class="list-group">
-                                <a href="/filegame/nso_meo.zip" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho PC</a>
+                                <a href="{{ asset('filegame/NSO_MEO.zip') }}" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho PC</a>
                             </div>
                         </div>
                     </div>

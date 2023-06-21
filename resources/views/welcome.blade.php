@@ -63,16 +63,16 @@
 
         <div class="container" style="margin-bottom: 50px">
             <h2>Đua top Level:</h2>
-            <h2 style="color: red">- Top 1: Danh hiệu trùm trường + 3 rhb + 70k lượng + 1 pet bóng ma</h2>
-            <h2 style="color: orange">- Top 2: 3 rhb + 50k lượng</h2>
+            <h2 style="color: red">- Top 1: 1 rhb + 2 rbn + 70k lượng + 1 pet Bóng Ma</h2>
+            <h2 style="color: orange">- Top 2: 3 rbn + 50k lượng</h2>
             <h2 style="color: yellowgreen">- Top 3: 1 rhb + 30k lượng</h2>
             <h2>- Top 4: 20k lượng</h2>
             <h2>- Top 5: 20k lượng</h2>
-            {{--            <h2>X2 nạp 9/5/2023- hết ngày 10/5/2023</h2>--}}
             <h2>Đua top Nạp:</h2>
-            <h2 style="color: red">- Top 1: Danh hiệu đại gia + 3 rhb + 70k lượng + 1 pet bóng ma</h2>
-            <h2 style="color: orange">- Top 2: 3 rhb + 50k lượng</h2>
-            <h2 style="color: yellowgreen">- Top 3: 1 rhb + 30k lượng</h2>
+            <h2 style="color: red">- Top 1: 1 rhb + 2 rbn + 70k lượng + 1 pet Yêu Tinh</h2>
+            <h2 style="color: orange">- Top 2: 3 rbn + 50k lượng</h2>
+            <h2 style="color: yellowgreen">- Top 3: 1 rbn + 30k lượng</h2>
+            <h2 style="color: red; margin-top: 40px">* Lưu Ý: Quà top nạp sẽ không bán và chỉ tính từ 100k trở lên. Khi Open sẽ tính từ 200k trở lên và quà sẽ hấp dẫn hơn. Cảm ơn anh em!!!</h2>
             <h2 style="color: blueviolet; margin-top: 50px">Mong anh em ủng hộ server phát triển!!!</h2>
         </div>
     </div>

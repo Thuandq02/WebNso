@@ -16,24 +16,22 @@ class Login extends Controller
 
     public function logout(Request $request)
     {
-        Session::flush();
-
-        Auth::logout();
-
+        Auth::guard('player')->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
         return redirect('login');
     }
 
     public function checkLogin(Request $request)
     {
-        $user = DB::table('player')->where('username', $request->username)->where('password', $request->password);
-        var_dump($user);
-        if (!empty($user)) {
+        $user = DB::select('SELECT player.username, player.password FROM player WHERE username= "'.$request->username.'"');
+        if (!empty($user) && $user[0]->password == $request->password) {
             $request->session()->regenerate();
             Session::flash('login_sucess', 'Đăng nhập thành công');
             return redirect()->route('user.detail');
         } else {
-            Session::flash('error', 'User or Password is incorrect');
-            return redirect()->route('login.show');
+            return redirect()->to('login')
+                ->withErrors("  Tài khoản hoặc mật khẩu không chính xác");
         }
     }
 }

@@ -37,17 +37,14 @@
                         <div class="form-group">
                             <button type="submit" class="btn btn-block btn-primary">Đăng ký</button>
                         </div>
-                        <div class="form-group mb-0">
-                            <a class="btn btn-link" href="/login">Quay về trang đăng nhập</a>
-                        </div>
-                        <div class="error-message">
-                            @if($errors->any())
+                        @csrf
+                        @if($errors->any())
+                            <div class="error-message">
                                 @foreach($errors->all() as $nameError)
-                                    <p style="color: red">{{$nameError}}</p>
+                                    <p class="alert alert-warning">{{$nameError}}</p>
                                 @endforeach
-                            @endif
-                        </div>
-                        <p style='color:green'>{{ (isset($success)) ? $success : '' }}</p>
+                            </div>
+                        @endif
                     </form>
                 </div>
             </div>

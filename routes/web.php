@@ -17,15 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/reg', function () {
-    return view('reg');
-});
-Route::get('/repass', function () {
-    return view('repass');
-});
 
 Route::get('/bxh', function () {
     $nap = DB::select('SELECT ninja.name, ninja.nap FROM ninja ORDER BY nap DESC LIMIT 5');
@@ -54,10 +45,12 @@ Route::get('/bxh', function () {
 });
 
 
-Route::get('/login', [\App\Http\Controllers\ninja\Login::class, 'showLogin'])->name('login.show');
-Route::post('/login', [\App\Http\Controllers\ninja\Login::class, 'checkLogin'])->name('login.check');
-Route::post('/logout', [\App\Http\Controllers\ninja\Login::class, 'logout'])->name('user.logout');
+Route::get('/home', [\App\Http\Controllers\ninja\Router::class, 'showHome'])->name('show.home');
+Route::get('/setinfor', [\App\Http\Controllers\ninja\Router::class, 'showSetInfor'])->name('show.setinfor');
+Route::get('/reg', [\App\Http\Controllers\ninja\Router::class, 'showReg'])->name('show.reg');
 Route::get('/register', [\App\Http\Controllers\ninja\Register::class, 'showRegisterForm'])->name('register.show');
 Route::post('/register', [\App\Http\Controllers\ninja\Register::class, 'register'])->name('register.user');
-Route::get('/detail', [\App\Http\Controllers\ninja\UserDetail::class, 'userDetail'])->name('user.detail');
+Route::post('/setPassword', [\App\Http\Controllers\ninja\SetInfor::class, 'setPassword'])->name('set.password');
+Route::post('/setPhone', [\App\Http\Controllers\ninja\SetInfor::class, 'setPhone'])->name('set.phone');
+//Route::get('/detail', [\App\Http\Controllers\ninja\UserDetail::class, 'userDetail'])->name('user.detail');
 
