@@ -57,7 +57,7 @@
 
         </div>
         <div class="py-3 text-center">
-            <h1><font color="red">Khai mở Server Mèo bản Beta Test 10h 18/6/2023 và đóng Beta Test 02/07/2023 </font></h1>
+            <h1><font color="red">Khai mở Server Mèo bản chính thức 10h 23/06/2023</font></h1>
             <h1>___________________________</h1>
         </div>
 
@@ -72,7 +72,7 @@
             <h2 style="color: red">- Top 1: 1 rhb + 2 rbn + 70k lượng + 1 pet Yêu Tinh</h2>
             <h2 style="color: orange">- Top 2: 3 rbn + 50k lượng</h2>
             <h2 style="color: yellowgreen">- Top 3: 1 rbn + 30k lượng</h2>
-            <h2 style="color: red; margin-top: 40px">* Lưu Ý: Quà top nạp sẽ không bán và chỉ tính từ 100k trở lên. Khi Open sẽ tính từ 200k trở lên và quà sẽ hấp dẫn hơn. Cảm ơn anh em!!!</h2>
+            <h2 style="color: red; margin-top: 40px">* Lưu Ý: Quà top nạp sẽ không bán và chỉ tính từ 200k trở lên. Cảm ơn AE!!!</h2>
             <h2 style="color: blueviolet; margin-top: 50px">Mong anh em ủng hộ server phát triển!!!</h2>
         </div>
     </div>
