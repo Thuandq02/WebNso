@@ -52,5 +52,6 @@ Route::get('/register', [\App\Http\Controllers\ninja\Register::class, 'showRegis
 Route::post('/register', [\App\Http\Controllers\ninja\Register::class, 'register'])->name('register.user');
 Route::post('/setPassword', [\App\Http\Controllers\ninja\SetInfor::class, 'setPassword'])->name('set.password');
 Route::post('/setPhone', [\App\Http\Controllers\ninja\SetInfor::class, 'setPhone'])->name('set.phone');
-//Route::get('/detail', [\App\Http\Controllers\ninja\UserDetail::class, 'userDetail'])->name('user.detail');
+Route::get('/pasretrieval', [\App\Http\Controllers\ninja\PasswordRetrieval::class, 'showRetrievalForm'])->name('show.retrieval');
+Route::post('/pasretrieval', [\App\Http\Controllers\ninja\PasswordRetrieval::class, 'passRetrieval'])->name('pass.retrieval');
 

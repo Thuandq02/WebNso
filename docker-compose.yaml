@@ -1,0 +1,18 @@
+version: '3.5'
+services:
+  db:
+    image: mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=ninja
+      - MYSQL_USER=local
+      - MYSQL_PASSWORD=local
+      - MYSQL_ROOT_PASSWORD=local
+    volumes:
+      - dbData:/var/lib/mysql/
+volumes:
+  indexData:
+  dbData:
+  rabbitmqdata:
+  sockdata:
