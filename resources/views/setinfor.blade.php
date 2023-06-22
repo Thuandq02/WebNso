@@ -47,6 +47,9 @@
                             <button type="submit" class="btn btn-primary">Đổi mật khẩu</button>
                         </div>
                     </form>
+                    <div style="margin-top: 20px">
+                        <a href="{{ route('show.retrieval') }}">Quên mật khẩu</a>
+                    </div>
                 </div>
             </div>
         </div>

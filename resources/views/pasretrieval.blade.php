@@ -12,15 +12,15 @@
             <div class="container">
                 <ol class="breadcrumb bg-transparent rounded-0">
                     <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
-                    <li class="breadcrumb-item active">Đăng ký tài khoản</li>
+                    <li class="breadcrumb-item active">Lấy lại mật khẩu</li>
                 </ol>
             </div>
         </div>
         <div class="container">
             <div class="card mb-3">
-                <div class="card-header">Đăng ký tài khoản</div>
+                <div class="card-header">Lấy lại mật khẩu</div>
                 <div class="card-body">
-                    <form method="post" action="{{ route('register.user') }}">
+                    <form method="post" action="{{ route('pass.retrieval') }}">
                         @csrf
                         @if($errors->any())
                             <div class="error-message">
@@ -39,17 +39,17 @@
                                    placeholder="Số điện thoại" required>
                         </div>
                         <div class="form-group">
-                            <label class="font-weight-bolder" for="password">Mật khẩu</label>
-                            <input type="text" class="form-control " name="password" id="password"
-                                   placeholder="Mật khẩu" required>
+                            <label class="font-weight-bolder" for="new_password">Mật khẩu mới</label>
+                            <input type="text" class="form-control " name="new_password" id="new_password"
+                                   placeholder="Mật khẩu mới" required>
                         </div>
                         <div class="form-group">
-                            <label class="font-weight-bolder" for="repassword">Xác nhận mật khẩu</label>
-                            <input type="text" class="form-control " name="repassword"
-                                   id="repassword" placeholder="Xác nhận mật khẩu" required>
+                            <label class="font-weight-bolder" for="confirm_new_password">Xác nhận mật khẩu mới</label>
+                            <input type="text" class="form-control " name="confirm_new_password"
+                                   id="confirm_new_password" placeholder="Xác nhận mật khẩu mới" required>
                         </div>
                         <div>
-                            <button type="submit" class="btn btn-primary">Đăng ký</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
