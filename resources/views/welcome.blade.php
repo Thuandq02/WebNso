@@ -11,7 +11,11 @@
     <div class="container"> -->
         <div class="container pb-5">
 
-
+            <div class="py-3 text-center">
+                <h1> <img width="60" height="30" src="{{ asset('/img/new.gif') }}"><font color="red">Khai mở Server Mèo bản chính thức 10h 23/06/2023</font></h1>
+                <h1> <font color="red">Đóng top vào 00h00 08/07/2023</font><img width="60" height="30" src="{{ asset('/img/new.gif') }}"></h1>
+                <h1>___________________________</h1>
+            </div>
 
             <div class="py-3 text-center">
                 <h3>Chúng tôi rất vui khi có thể đem đến cho bạn những phút giây giải trí !!!</h3>
@@ -52,12 +56,9 @@
                         <a href="/bxh" class="btn btn-block btn-outline-primary">Xem ngay</a>
                     </div>
                 </div>
-
             </div>
-
         </div>
         <div class="py-3 text-center">
-            <h1> <img width="60" height="30" src="{{ asset('/img/new.gif') }}"><font color="red">Khai mở Server Mèo bản chính thức 10h 23/06/2023 và đóng top vào 07/07/2023</font><img width="60" height="30" src="{{ asset('/img/new.gif') }}"></h1>
             <h1>___________________________</h1>
         </div>
 
