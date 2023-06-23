@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/bxh', function () {
-    $nap = DB::select('SELECT ninja.name, ninja.nap FROM ninja ORDER BY nap DESC LIMIT 5');
+    $nap = DB::select('SELECT player.username, player.tongnap FROM player ORDER BY tongnap DESC LIMIT 5');
     $level = DB::select('SELECT ninja.name, ninja.level FROM ninja ORDER BY level DESC LIMIT 5');
     $user = [
         'nap'=>$nap,
@@ -28,8 +28,8 @@ Route::get('/bxh', function () {
     $userNap = [];
     foreach ($user['nap'] as $item) {
         $userNap[] = [
-            'name'=>$item->name,
-            'nap'=>$item->nap
+            'name'=>$item->username,
+            'nap'=>$item->tongnap
         ];
     }
     $user['nap'] = $userNap;
