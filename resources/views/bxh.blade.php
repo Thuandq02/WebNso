@@ -3,7 +3,7 @@
 
     <form style="margin-top:50px; padding: 0 500px">
         @csrf
-        <h2 style="color: red;text-align:center; margin-bottom: 50px">Top Level</h2>
+        <h2 style="color: red;text-align:center; margin-bottom: 50px">Top Level<img src="{{ asset('/img/sao.gif') }}"></h2>
         <table class="table">
             <thead>
             <tr class="table-secondary">
@@ -16,7 +16,7 @@
             @foreach($user['level'] as $key => $item)
                 <tr>
                     <th scope="row" style="text-align:center">{{ ++$key }}</th>
-                    <td style="text-align:center">{{ $item['name'] }} </td>
+                    <td style="text-align:center"><img src="{{ asset('/img/nv.gif') }}">{{ $item['name'] }} </td>
                     <td style="text-align:center">{{ $item['level'] }} </td>
                 </tr>
             @endforeach
@@ -26,7 +26,7 @@
     <di style="text-align:center; margin-top:50px; margin-bottom: 75px"><h1>----------------------------------------------</h1></di>
     <form style="padding: 0 500px;margin-bottom: 50px">
         @csrf
-        <h2 style="color: red;text-align:center;margin-bottom: 50px">Top Nạp</h2>
+        <h2 style="color: red;text-align:center;margin-bottom: 50px">Top Nạp<img src="{{ asset('/img/sao.gif') }}"></h2>
         <table class="table">
             <thead>
             <tr class="table-secondary">

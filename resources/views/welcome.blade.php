@@ -57,19 +57,19 @@
 
         </div>
         <div class="py-3 text-center">
-            <h1><font color="red">Khai mở Server Mèo bản chính thức 10h 23/06/2023 và đóng top vào 07/07/2023</font></h1>
+            <h1> <img width="60" height="30" src="{{ asset('/img/new.gif') }}"><font color="red">Khai mở Server Mèo bản chính thức 10h 23/06/2023 và đóng top vào 07/07/2023</font><img width="60" height="30" src="{{ asset('/img/new.gif') }}"></h1>
             <h1>___________________________</h1>
         </div>
 
         <div class="container" style="margin-bottom: 50px">
-            <h2>Đua top Level:</h2>
+            <h2><img src="{{ asset('/img/sao.gif') }}">Đua top Level:</h2>
             <h2 style="color: red">- Top 1: 3 rhb + 2 rbn + 100k lượng + Đang update</h2>
             <h2 style="color: orange">- Top 2: 5 rbn + 70k lượng</h2>
             <h2 style="color: yellowgreen">- Top 3: 3 rhb + 40k lượng</h2>
             <h2>- Top 4: 20k lượng</h2>
             <h2>- Top 5: 20k lượng</h2>
             <h2>- Top 6-10: 10k lượng</h2>
-            <h2>Đua top Nạp:</h2>
+            <h2><img src="{{ asset('/img/sao.gif') }}">Đua top Nạp:</h2>
             <h2 style="color: red">- Top 1: 3 rhb + 2 rbn + 100k lượng + Đang update</h2>
             <h2 style="color: orange">- Top 2: 5 rbn + 70k lượng</h2>
             <h2 style="color: yellowgreen">- Top 3: 3 rbn + 30k lượng</h2>
