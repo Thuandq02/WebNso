@@ -70,6 +70,11 @@
                         </div>
                         <div class="modal-body">
                             <div class="list-group">
+                                <a href="{{ asset('filegame/NSO_MEOx3.jar') }}" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho java x3</a>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
                                 <a href="{{ asset('filegame/NSO_MEO.apk') }}" class="list-group-item list-group-item-action"><i class="fas fa-download mr-2"></i>Tải về phiên bản cho apk</a>
                             </div>
                         </div>
