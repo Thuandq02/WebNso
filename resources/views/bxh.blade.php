@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 
-    <form style="margin-top:50px; padding: 0 500px">
+    <form style="margin-top:50px; width: 100%; padding: 0 25%">
         @csrf
         <h2 style="color: red;text-align:center; margin-bottom: 50px">Top Level<img src="{{ asset('/img/sao.gif') }}"></h2>
         <table class="table">
@@ -24,7 +24,7 @@
         </table>
     </form>
     <di style="text-align:center; margin-top:50px; margin-bottom: 75px"><h1>----------------------------------------------</h1></di>
-    <form style="padding: 0 500px;margin-bottom: 50px">
+    <form style=" width: 100%; padding: 0 25%;margin-bottom: 50px">
         @csrf
         <h2 style="color: red;text-align:center;margin-bottom: 50px">Top Nạp<img src="{{ asset('/img/sao.gif') }}"></h2>
         <table class="table">
@@ -37,15 +37,15 @@
             </thead>
             <tbody class="table-group-divider">
 
-            @foreach($user['nap'] as $key => $item)
-                <tr>
-                    <th scope="row" style="text-align:center">{{ ++$key }}</th>
-                    <td style="text-align:center">{{ $item['name'] }} </td>
-                    <td style="text-align:center">{{ number_format($item['nap']) }} vnđ</td>
-                </tr>
-            @endforeach
-            </tbody>
-        </table>
-    </form>
-
+                @foreach($user['nap'] as $key => $item)
+                    <tr>
+                        <th scope="row" style="text-align:center">{{ ++$key }}</th>
+                        <td style="text-align:center">{{ $item['name'] }} </td>
+                        <td style="text-align:center">{{ number_format($item['nap']) }} vnđ</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </form>
+    </div>
 @endsection
