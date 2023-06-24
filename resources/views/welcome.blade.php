@@ -83,6 +83,7 @@
             <h2 style="color: yellowgreen">- Top 3: 3 rbn + 40k lượng</h2>
             <h2>- Top 4: 20k lượng</h2>
             <h2>- Top 5: 20k lượng</h2>
+            <h2 style="color: red">* Lưu Ý: Đua top Sự Kiện sẽ kết thúc vào 00h00 24/07/2023. Cảm ơn AE!!!</h2>
             <h2 style="color: blueviolet; margin-top: 50px">Mong anh em ủng hộ server phát triển!!!</h2>
         </div>
     </div>
