@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/bxh', function () {
     $nap = DB::select('SELECT player.username, player.tongnap FROM player ORDER BY tongnap DESC LIMIT 5');
-    $level = DB::select('SELECT ninja.name, ninja.level FROM ninja ORDER BY level DESC LIMIT 10');
+    $level = DB::select('SELECT ninja.name, ninja.level, ninja.exp FROM ninja ORDER BY exp DESC LIMIT 10');
     $topSk = DB::select('SELECT ninja.name, ninja.topmanh FROM ninja ORDER BY topmanh DESC LIMIT 5');
     $user = [
         'nap'=>$nap,
