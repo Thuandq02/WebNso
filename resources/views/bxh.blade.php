@@ -16,8 +16,8 @@
             @foreach($user['level'] as $key => $item)
                 <tr>
                     <th scope="row" style="text-align:center">{{ ++$key }}</th>
-                    <td style="text-align:center"><img src="{{ asset('/img/nv.gif') }}">{{ $item['name'] }} </td>
-                    <td style="text-align:center">{{ $item['level'] }} </td>
+                    <td style="text-align:center"><img src="{{ asset('/img/nv.gif') }}">{{ $item['name'] }}</td>
+                    <td style="text-align:center">{{ $item['level'] }} <img src="{{ asset('/img/sao.gif') }}"> {{ $item['ptLevel'] }}%</td>
                 </tr>
             @endforeach
             </tbody>
