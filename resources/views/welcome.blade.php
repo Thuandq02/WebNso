@@ -78,8 +78,8 @@
             <h2>- Top 5: 20k lượng</h2>
             <h2 style="color: red">* Lưu Ý: Quà top nạp sẽ không bán và chỉ tính từ 200k trở lên. Cảm ơn AE!!!</h2>
             <h2><img src="{{ asset('/img/sao.gif') }}">Đua top Sự Kiện:</h2>
-            <h2 style="color: red">- Top 1: 3 rhb + 2 rbn + 100k lượng + 1 gậy mặt trăng</h2>
-            <h2 style="color: orange">- Top 2: 5 rbn + 70k lượng</h2>
+            <h2 style="color: red">- Top 1: 3 rhb + 2 rbn + 100k lượng + 1 Gậy Mặt Trăng/Trái Tim + Mặt Nạ Hổ</h2>
+            <h2 style="color: orange">- Top 2: 5 rbn + 70k lượng + 1 Gậy Mặt Trăng/Trái Tim</h2>
             <h2 style="color: yellowgreen">- Top 3: 3 rbn + 40k lượng</h2>
             <h2>- Top 4: 20k lượng</h2>
             <h2>- Top 5: 20k lượng</h2>
