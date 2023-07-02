@@ -66,7 +66,7 @@
             <h2><img src="{{ asset('/img/sao.gif') }}">Đua top Level:</h2>
             <h2 style="color: red">- Top 1: 3 rhb + 2 rbn + 100k lượng + Nhất Vĩ Li Mao Bảo Bảo Sơ Cấp</h2>
             <h2 style="color: orange">- Top 2: 5 rbn + 70k lượng</h2>
-            <h2 style="color: yellowgreen">- Top 3: 3 rhb + 40k lượng</h2>
+            <h2 style="color: yellowgreen">- Top 3: 3 rhn + 40k lượng</h2>
             <h2>- Top 4: 20k lượng</h2>
             <h2>- Top 5: 20k lượng</h2>
             <h2>- Top 6-10: 10k lượng</h2>
