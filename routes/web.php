@@ -20,27 +20,56 @@ Route::get('/', function () {
 
 Route::get('/bxh', function () {
     $nap = DB::select('SELECT player.username, player.tongnap FROM player ORDER BY tongnap DESC LIMIT 5');
-    $level = DB::select('SELECT ninja.name, ninja.level FROM ninja ORDER BY level DESC LIMIT 5');
+    $level = DB::select('SELECT ninja.name, ninja.level, ninja.exp FROM ninja ORDER BY exp DESC LIMIT 10');
+    $exps = DB::select('SELECT level.level, level.exps FROM level');
+    $topSk = DB::select('SELECT ninja.name, ninja.topmanh FROM ninja ORDER BY topmanh DESC LIMIT 5');
+
+    //user
     $user = [
-        'nap'=>$nap,
-        'level'=>$level
+        'nap' => $nap,
+        'level' => $level,
+        'topSk' => $topSk,
     ];
+    //bxh nap
     $userNap = [];
     foreach ($user['nap'] as $item) {
         $userNap[] = [
-            'name'=>$item->username,
-            'nap'=>$item->tongnap
+            'name' => $item->username,
+            'nap' => $item->tongnap
         ];
     }
     $user['nap'] = $userNap;
+
+    // exp mỗi lv
+    $expLevel = 0;
+    $expUp = [];
+    foreach ($exps as $item) {
+        $expLevel += $item->exps;
+        $expUp[$item->level] = $expLevel;
+    }
+
+    //bxh level
     $userLevel = [];
     foreach ($user['level'] as $item) {
+        $currentExp = $exps[$item->level]->exps - ($expUp[$item->level] - $item->exp);
+        $ptLv = ($currentExp / $exps[$item->level]->exps) * 100;
         $userLevel[] = [
-            'name'=>$item->name,
-            'level'=>$item->level
+            'name' => $item->name,
+            'level' => $item->level,
+            'ptLevel' => number_format($ptLv, 2)
         ];
     }
     $user['level'] = $userLevel;
+
+    //bxh top sk
+    $userTopSk = [];
+    foreach ($user['topSk'] as $item) {
+        $userTopSk[] = [
+            'name' => $item->name,
+            'topmanh' => $item->topmanh
+        ];
+    }
+    $user['topSk'] = $userTopSk;
     return view('bxh', compact('user'));
 });
 
