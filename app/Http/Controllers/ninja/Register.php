@@ -24,7 +24,7 @@ class Register extends Controller
             $user->username = $request->username;
             $user->phone = $request->phone;
             $user->password = $request->password;
-            $user->status = "wait";
+            $user->status = "active";
             $user->save();
             return redirect()->to('reg')
                 ->withErrors("  Đăng kí thành công");
